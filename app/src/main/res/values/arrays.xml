@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="id_activityScreenTitles">
+        <item>Home</item>
+        <item>Text to Sign</item>
+        <item>Image to Sign</item>
+        <item>Voice to Sign</item>
+        <item>Sign to Text</item>
+        <item>Object Detection</item>
+        <item>Language Identification</item>
+        <item />
+        <item />
+        <item>Settings</item>
+        <item>Log Out</item>
+    </string-array>
+
+    <array name="id_activityScreenIcons">
+        <item>@drawable/home_logo</item>
+        <item>@drawable/text_logo</item>
+        <item>@drawable/camera_logo</item>
+        <item>@drawable/record_voice_logo</item>
+        <item>@drawable/gesture_logo</item>
+        <item>@drawable/object_logo</item>
+        <item>@drawable/language_logo</item>
+        <item>0</item>
+        <item>0</item>
+        <item>@drawable/settings_logo</item>
+        <item>@drawable/logout_logo</item>
+    </array>
+
+</resources>

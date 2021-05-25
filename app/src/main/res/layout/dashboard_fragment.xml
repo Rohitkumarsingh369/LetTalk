@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/upperpartdesign"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/homedesignupper"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <View
+        android:id="@+id/lowerpartdesignbg"
+        android:layout_width="match_parent"
+        android:layout_height="611dp"
+        android:background="@color/main"
+        app:layout_constraintTop_toBottomOf="@+id/upperpartdesign"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/designbox"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="310dp"
+        android:background="@drawable/designbox"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="275dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/designbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/lowerpartdesign"
+        android:layout_width="match_parent"
+        android:layout_height="611dp"
+        android:background="@drawable/homedesignlower"
+        app:layout_constraintTop_toBottomOf="@+id/upperpartdesign"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/greetingmessage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:background="@null"
+        android:fontFamily="@font/montserrat_bold"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="10dp" />
+
+    <TextView
+        android:id="@+id/displayname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:fontFamily="@font/montserrat_bold"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greetingmessage1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="403dp"
+        android:layout_marginTop="45dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@+id/upperpartdesign">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                app:columnCount="2"
+                app:rowCount="5">
+
+                <!--first row-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/text_to_sign"
+                    android:layout_width="160dp"
+                    android:layout_height="112dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="5dp"
+                    android:clickable="true"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card_background_img"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@null"
+                            android:src="@drawable/text_to_sign"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:gravity="center"
+                            android:background="@null"
+                            android:textColor="@color/white"
+                            android:justificationMode="inter_word"
+                            android:text="@string/text_to_sign" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/image_to_sign"
+                    android:layout_width="160dp"
+                    android:layout_height="112dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card_background_img"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="0dp"
+                            android:background="@null"
+                            android:src="@drawable/image_to_sign"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:gravity="center"
+                            android:background="@null"
+                            android:textColor="@color/white"
+                            android:justificationMode="inter_word"
+                            android:text="@string/image_to_sign" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!--second row-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/voice_to_sign"
+                    android:layout_width="160dp"
+                    android:layout_height="112dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card_background_img"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:src="@drawable/voice_to_sign"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:gravity="center"
+                            android:background="@null"
+                            android:textColor="@color/white"
+                            android:justificationMode="inter_word"
+                            android:text="@string/voice_to_sign" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sign_to_text"
+                    android:layout_width="160dp"
+                    android:layout_height="112dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card_background_img"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:paddingRight="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@null"
+                            android:src="@drawable/gesture_to_sign"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:gravity="center"
+                            android:background="@null"
+                            android:textColor="@color/white"
+                            android:justificationMode="inter_word"
+                            android:text="@string/sign_to_text" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!--third row-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/object_detection"
+                    android:layout_width="160dp"
+                    android:layout_height="112dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card_background_img"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:src="@drawable/object_detection"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:gravity="center"
+                            android:background="@null"
+                            android:textColor="@color/white"
+                            android:justificationMode="inter_word"
+                            android:text="@string/object_detection" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/language_recognition"
+                    android:layout_width="160dp"
+                    android:layout_height="112dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card_background_img"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:src="@drawable/lange"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:gravity="center"
+                            android:background="@null"
+                            android:textColor="@color/white"
+                            android:justificationMode="inter_word"
+                            android:text="@string/language_recognition" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!--second row-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="112dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:justificationMode="inter_word"
+                        android:text="hello" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="112dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="hello" />
+                </androidx.cardview.widget.CardView>
+                <!--third row-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="112dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="hello" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="112dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="hello" />
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.gridlayout.widget.GridLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

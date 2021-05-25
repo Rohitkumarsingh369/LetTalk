@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="MyCustomTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/main</item>
+        <item name="android:actionBarStyle">@style/Theme.UpProject</item>
+
+    </style>
+    <style name="MyCustomTheme1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/main</item>
+        <item name="android:actionBarStyle">@style/Theme.UpProject</item>
+        <item name="android:navigationBarColor">@color/main</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+    <style name="MyCustomTheme2" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/main</item>
+        <item name="android:statusBarColor">@color/main</item>
+        <item name="android:actionBarStyle">@style/Theme.UpProject</item>
+        <item name="android:navigationBarColor">@color/white </item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="Theme.UpProject" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:background">@color/white</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/main</item>
+        <item name="colorPrimaryVariant">@color/main</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/main</item>
+        <item name="colorSecondaryVariant">@color/main</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">#ffffff</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+      <!--  <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>-->
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="AppTheme.DrawerArrowToggle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+</resources>

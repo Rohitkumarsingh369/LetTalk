@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Let\'sTalk</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+
+
+    <!--dashboard card title start -->
+    <string name="text_to_sign">Text to Sign</string>
+    <string name="image_to_sign">Image to Sign</string>
+    <string name="voice_to_sign">Voice to Sign</string>
+    <string name="sign_to_text">Sign to Text</string>
+    <string name="object_detection">Object Detection</string>
+    <string name="language_recognition">Language Identification</string>
+    <!--dashboard card title end -->
+
+    <string name="title_a">a\t\t\t\t\tA</string>
+    <string name="title_b">b\t\t\t\t\tB</string>
+    <string name="title_c">c\t\t\t\t\tC</string>
+    <string name="title_d">d\t\t\t\t\tD</string>
+    <string name="title_e">e\t\t\t\t\tE</string>
+    <string name="title_f">f\t\t\t\t\tF</string>
+    <string name="title_g">g\t\t\t\t\tG</string>
+    <string name="title_h">h\t\t\t\t\tH</string>
+    <string name="title_i">i\t\t\t\t\tI</string>
+    <string name="title_j">j\t\t\t\t\tJ</string>
+    <string name="title_k">k\t\t\t\t\tK</string>
+    <string name="title_l">l\t\t\t\t\tL</string>
+    <string name="title_m">m\t\t\t\t\tM</string>
+    <string name="title_n">n\t\t\t\t\tN</string>
+    <string name="title_o">o\t\t\t\t\tO</string>
+    <string name="title_p">p\t\t\t\t\tP</string>
+    <string name="title_q">q\t\t\t\t\tQ</string>
+    <string name="title_r">r\t\t\t\t\tR</string>
+    <string name="title_s">s\t\t\t\t\tT</string>
+    <string name="title_t">t\t\t\t\t\tT</string>
+    <string name="title_u">u\t\t\t\t\tU</string>
+    <string name="title_v">v\t\t\t\t\tV</string>
+    <string name="title_w">w\t\t\t\t\tW</string>
+    <string name="title_x">x\t\t\t\t\tX</string>
+    <string name="title_y">y\t\t\t\t\tY</string>
+    <string name="title_z">z\t\t\t\t\tZ</string>
+
+
+    <!--student name-->
+    <string name="name1">Konduru Charishma Reddy \n 20171CSE0319</string>
+    <string name="name2">Mohammed Umar Raehan \n 20171CSE0416</string>
+    <string name="name3">Ritesh Chettri \n 20171CSE0576</string>
+    <string name="name4">Rohit Kumar Singh \n 20171CSE0580</string>
+    <string name="name5">Tahir Hussain \n 20171CSE0715</string>
+
+</resources>

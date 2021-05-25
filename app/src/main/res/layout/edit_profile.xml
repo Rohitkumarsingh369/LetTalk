@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcomepage">
+
+  <View
+      android:id="@+id/upperpart"
+      android:layout_width="match_parent"
+      android:layout_height="240dp"
+      android:background="@color/main"
+      tools:ignore="MissingConstraints" />
+
+  <View
+      android:id="@+id/lowerpart"
+      android:layout_width="match_parent"
+      android:layout_height="572dp"
+      android:layout_marginTop="160dp"
+      android:background="@drawable/lower_design"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Letstalk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="64dp"
+        android:background="@color/main"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Let's Talk"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/Letstalkupperpart"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="120dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/upperpart" />
+
+    <View
+        android:id="@+id/letstalklowerpart"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="107dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/upperpart" />
+  <!--design start-->
+  <View
+      android:id="@+id/view"
+      android:layout_width="70dp"
+      android:layout_height="70dp"
+      android:layout_marginStart="48dp"
+      android:layout_marginTop="8dp"
+      android:background="@drawable/designbox"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <View
+      android:id="@+id/design3right"
+      android:layout_width="70dp"
+      android:layout_height="70dp"
+      android:layout_marginStart="278dp"
+      android:layout_marginTop="32dp"
+      android:background="@drawable/designbox"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <View
+      android:id="@+id/design4right"
+      android:layout_width="70dp"
+      android:layout_height="70dp"
+      android:layout_marginStart="246dp"
+      android:layout_marginTop="67dp"
+      android:background="@drawable/designbox"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <View
+      android:id="@+id/view7"
+      android:layout_width="70dp"
+      android:layout_height="70dp"
+      android:layout_marginStart="13dp"
+      android:layout_marginTop="43dp"
+      android:background="@drawable/designbox"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+  <!--design end-->
+
+  <TextView
+      android:id="@+id/message"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="100dp"
+      android:layout_marginEnd="32dp"
+      android:fontFamily="@font/montserrat"
+      android:gravity="center"
+      android:text="Edit Name"
+      android:textColor="@color/black"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/Letstalk" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nametext"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/white"
+        app:boxStrokeColor="@color/main"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:helperText="Max Length 20"
+        app:helperTextEnabled="true"
+        app:hintTextColor="@color/main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        app:startIconDrawable="@drawable/name_logo"
+        app:startIconTint="@color/main">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="Name"
+            android:inputType="textCapWords|textAutoCorrect"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.button.MaterialButton
+      android:id="@+id/getupdated"
+      style="@style/Widget.MaterialComponents.Button"
+      android:layout_width="0dp"
+      android:layout_height="60dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="32dp"
+      android:layout_weight="1"
+      android:text="update"
+      app:backgroundTint="@color/main"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/nametext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
